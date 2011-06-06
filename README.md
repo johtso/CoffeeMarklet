@@ -22,3 +22,19 @@ Usage
 `add_jquery` - Boolean - If true wraps the function in code adding jQuery to the page. Defaults to true.
 
 `jquery_version` - String - The minimum jQuery version to be loaded.
+
+Example
+-------
+
+**Source CoffeeScript:**
+
+    alert ('Hello' for i in [0..5]).join(', ')
+
+**Resulting bookmarklet without jQuery:**
+
+    javascript:(function(){var a;alert(function(){var b;b=[];for(a=0;a<=5;a++)b.push("Hello");return b}().join(", "))}).call(this);
+
+**And with jQuery:**
+<pre>
+javascript:(function(e,a,g,h,f,c,b,d){if(!(f=e.jQuery)||g>f.fn.jquery||h(f)){c=a.createElement("script");c.type="text/javascript";c.src="http://ajax.googleapis.com/ajax/libs/jquery/"+g+"/jquery.min.js";c.onload=c.onreadystatechange=function(){if(!b&&(!(d=this.readyState)||d=="loaded"||d=="complete")){h((f=e.jQuery).noConflict(1),b=1);f(c).remove()}};a.documentElement.childNodes[0].appendChild(c)}})(window,document,"1.6.1",function($,L){alert("CoffeeScript and jQuery "+$.fn.jquery+"!");});
+</pre>
