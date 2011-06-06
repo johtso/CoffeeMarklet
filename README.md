@@ -1,4 +1,4 @@
-CoffeeMarkup
+CoffeeMarklet
 ============
 
 A little module for converting CoffeeScript to a bookmarklet.
@@ -12,6 +12,10 @@ What it does
 
 Usage
 -----
+
+The easiest way is to just use the tool here: [http://johtso.github.com/CoffeeMarklet/](http://johtso.github.com/CoffeeMarklet/)
+
+- - -
 
     coffeemarklet(coffeescript, callback, [add_jquery, [jquery_version]])
 
