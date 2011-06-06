@@ -18,7 +18,7 @@
     <div id="wrapper">
         <div id="input-area">
             <label for="input">CoffeeScript:</label><br />
-            <textarea id="input" cols="80"># Your CoffeeScript goes here!</textarea><br />
+            <textarea id="input" cols="80" spellcheck="false"># Your CoffeeScript goes here!&#10;&#10;alert &quot;CoffeeScript and jQuery #{$.fn.jquery}!&quot;</textarea><br />
             <a id="gen-button" class="large blue button">Generate bookmarklet</a>
             <div id="jq_options">
                 <label for="jq_check">Include jQuery:</textarea><input type="checkbox" id="jq_check" checked="checked" />
@@ -28,11 +28,10 @@
                 </div>
             </div>
             <br />
-            
         </div>
         <div id="output-area">
         <label for="output">Bookmarklet Code:</label><br />
-        <textarea id="output" cols="80"></textarea>
+        <textarea id="output" cols="80" spellcheck="false"></textarea>
         </div><br />
         <a id="bookmarklet" class="green button">Your bookmarklet!</a>
     </div>
