@@ -1,0 +1,135 @@
+body:before
+{
+   content: "";
+   position: fixed;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   z-index: 100;
+   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   }
+
+body {
+    background: url("bg.gif") repeat scroll 0 0 white;
+}
+
+html, body {
+    height: 100%;
+}
+
+label {
+    font-family: "Ubuntu","Lucida Grande",sans-serif;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #F8FCEE;
+}
+
+#wrapper {
+    background-color: #a0dcf8;
+    padding: 20px;
+    -moz-box-shadow: 13px 16px 20px #030303;
+    -webkit-box-shadow: 13px 16px 20px #030303;
+    box-shadow: 13px 16px 20px #030303;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+.swc1 {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.swc0 {
+    display: table;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#jq_ver {
+    width: 70px;
+}
+
+#jq_options {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#jq_ver_box {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#input, #output {
+    resize: vertical;
+    height: 200px;
+}
+
+#gen-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#input-area {
+    margin-bottom: 20px;
+}
+
+#bookmarklet {
+    display: none;
+    margin-top: 30px;
+    font-size: 150%;
+}
+
+/*#bookmarklet {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    background-color: #73EA1A;
+    margin-top: 10px;
+    display: none;
+}*/
+
+
+.button, .button:visited {
+    background: url("/images/alert-overlay.png") repeat-x scroll 0 0 #222222;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 5px 3px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+.button:hover {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+.button:active {
+    top: 1px;
+}
+.large.button, .large.button:visited {
+    font-size: 20px;
+    padding: 8px 10px 8px;
+}
+.green.button, .green.button:visited {
+    background-color: #5AB953;
+}
+.green.button:hover {
+    background-color: #49A34B;
+}
+
+.blue.button, .blue.button:visited {
+    background-color: #2DAEBF;
+}
+.blue.button:hover {
+    background-color: #007D9A;
+}
