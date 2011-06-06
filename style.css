@@ -14,6 +14,8 @@ body:before
 
 body {
     background: url("bg.gif") repeat scroll 0 0 white;
+    margin: 0;
+    text-align: center;
 }
 
 html, body {
@@ -26,7 +28,15 @@ label {
     text-shadow: 0 1px 1px #F8FCEE;
 }
 
+#title {
+    font-family: 'Lobster', arial, serif;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 #wrapper {
+    text-align: left;
     background-color: #a0dcf8;
     padding: 20px;
     -moz-box-shadow: 13px 16px 20px #030303;
