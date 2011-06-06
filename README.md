@@ -15,7 +15,10 @@ Usage
 
     coffeemarklet(coffeescript, callback, [add_jquery, [jquery_version]])
 
-`coffeescript` - String - The CoffeeScript to be converted
+`coffeescript` - String - The CoffeeScript to be converted.
+
 `callback` - Function - The callback that will be passed the resulting bookmarklet.
+
 `add_jquery` - Boolean - If true wraps the function in code adding jQuery to the page. Defaults to true.
+
 `jquery_version` - String - The minimum jQuery version to be loaded.
