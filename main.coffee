@@ -1,4 +1,6 @@
 $ ->
+    $('#src_show')[0].reset()
+    
     bookmarklet = $('#bm_button')
     bm_div = $('#bookmarklet')
 
