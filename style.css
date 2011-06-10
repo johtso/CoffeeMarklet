@@ -15,11 +15,24 @@ body:before
 body {
     background: url("bg.gif") repeat scroll 0 0 white;
     margin: 0;
-    text-align: center;
 }
 
 html, body {
     height: 100%;
+}
+
+#wrap
+{
+float: left;
+position: relative;
+left: 50%;
+}
+
+#content
+{
+float: left;
+position: relative;
+left: -50%;
 }
 
 label {
@@ -33,10 +46,10 @@ label {
     font-size: 90px;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
-#wrapper {
-    text-align: left;
+#box {
     background-color: #a0dcf8;
     padding: 20px;
     -moz-box-shadow: 13px 16px 20px #030303;
@@ -46,18 +59,6 @@ label {
     -moz-border-radius: 10px;
     border-radius: 10px;
 
-}
-
-.swc1 {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-}
-
-.swc0 {
-    display: table;
-    margin: 0 auto;
-    height: 100%;
 }
 
 #jq_ver {
