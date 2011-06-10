@@ -26,23 +26,30 @@ var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-23814301-1"]);_gaq.push(["_trackP
 
     <div id="box">   
         <div id="input-area">
-            <label for="input">CoffeeScript:</label><br />
+            <label for="input">CoffeeScript:</label>
+            <br />
             <textarea id="input" cols="80" spellcheck="false"># Paste your CoffeeScript here...&#10;&#10;alert (&quot;Test #{i}&quot; for i in [0..3]).join(', ')</textarea><br />
+
             <a id="gen-button" class="large blue button">Generate bookmarklet</a>
+
             <div id="jq_options">
                 <label for="jq_check">Include jQuery:</label>
                 <input type="checkbox" id="jq_check" checked="checked" />
+
                 <div id="jq_ver_box">
-                <label for="jq_ver">Minimum version:</label>
-                <input type="text" id="jq_ver" value="1.6.1" />
+                    <label for="jq_ver">Minimum version:</label>
+                    <input type="text" id="jq_ver" value="1.6.1" />
                 </div>
             </div>
             <br />
         </div>
+
         <div id="output-area">
-        <label for="output">Bookmarklet Code:</label><br />
-        <textarea id="output" cols="80" spellcheck="false"></textarea>
+            <label for="output">Bookmarklet Code:</label>
+            <br />
+            <textarea id="output" cols="80" spellcheck="false"></textarea>
         </div><br />
+
         <a id="bookmarklet" class="green button">Your bookmarklet!</a>
     </div>
 </div>
