@@ -1,21 +1,31 @@
 $ ->
-    bookmarklet = $('#bookmarklet')
+    bookmarklet = $('#bm_button')
+    bm_div = $('#bookmarklet')
 
     if not $('#jq_check').is(':checked')
         $('#jq_ver_box').hide()
 
     $('#jq_check').change ->
         $('#jq_ver_box').slideToggle()
+    
+    $('#src_check').change ->
+        $('#output-area').slideToggle()
         
     $('#gen-button').click ->
-        if bookmarklet.is(':visible')
-            bookmarklet.fadeOut('slow')
+        if bm_div.is(':visible')
+            bm_div.fadeOut('slow')
+            @refreshing = true
             
         jquery_include = $('#jq_check').is(':checked')
         cs = $('#input').val()
         jquery_version = $('#jq_ver').val()
-        callback = (uri) ->
+        callback = (uri) =>
             $('#output').val(uri)
-            bookmarklet.attr('href', uri).fadeIn('slow')
+            if not @refreshing
+                bookmarklet.attr('href', uri)
+                bm_div.slideDown('slow')
+            else
+                bookmarklet.attr('href', uri)
+                bm_div.fadeIn('slow')
         
         coffeemarklet.compile cs, callback, jquery_include, jquery_version

@@ -86,14 +86,23 @@ label {
     margin-right: 10px;
 }
 
+#output-area {
+    display: none;
+}
+
 #input-area {
     margin-bottom: 20px;
 }
 
 #bookmarklet {
     display: none;
-    margin-top: 30px;
+    text-align: center;
+}
+
+#bm_button {
     font-size: 150%;
+    padding: 10px 15px 10px;
+    margin-bottom: 10px;
 }
 
 /*#bookmarklet {
