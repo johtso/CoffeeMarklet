@@ -10,7 +10,7 @@ class CoffeeMarklet
             output_info: 'compiled_code'
             js_code: js
             (compiled) =>
-                bookmarklet = @makeURI(compiled, add_jquery, jquery_version)
+                bookmarklet = @makeURI($.trim(compiled), add_jquery, jquery_version)
                 callback bookmarklet
 
     makeURI: (code, add_jquery, jquery_version) ->
